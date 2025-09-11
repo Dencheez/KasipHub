@@ -1,0 +1,42 @@
+
+/* footer */
+footer{
+    background: #0B0C49;
+    color: #FFFFFF;
+    padding: 40px;
+    text-align: center;
+}
+
+.rightsideFooter{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+    width: 100%; 
+}
+
+.toptitleFooter a{
+    color: #FFFFFF;
+    margin: 20px;
+}
+
+.bottomMessenger{
+    display: flex;
+    align-items: center;
+    margin: 16px;  
+}
+
+.bottomMessenger img{
+    margin-right: 16px;
+}
+
+.centerFooter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+} 
+
+.centerFooter p{
+    margin-right: -1200px;
+}

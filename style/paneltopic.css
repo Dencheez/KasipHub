@@ -1,0 +1,235 @@
+ .site-content {
+      transition: all 0.3s ease;
+    }
+
+    .theme-btn img{
+      width: 20px;
+    }
+
+    /* Панель */
+    .accessibility-panel {
+      position: fixed;
+      top: 0;
+      left: -300px;
+      width: 300px;
+      height: 100%;
+      background: #f0f0f0 !important;
+      padding: 20px;
+      box-shadow: 2px 0 5px rgba(0,0,0,0.2);
+      transition: left 0.3s ease;
+      z-index: 999;
+    }
+
+    .accessibility-panel.active {
+      left: 0;
+    }
+    /* Панель по умолчанию */
+#panel {
+  position: fixed;
+  top: 0;
+  right: -260px;
+  height: 100%;
+  background: #fff !important;
+  padding: 20px;
+  transition: right 0.3s ease;
+  z-index: 9999;
+}
+#panel.active {
+  right: 0;
+}
+
+/* ==== Темы ==== */
+
+/* дефолтная тема */
+body.theme-default #panel {
+  background: #f5eee2 !important; /* немного светлее чем #EFE7DB */
+  color: #070981 !important;
+}
+
+/* чёрный + оранжевый */
+body.theme-black-orange {
+  background: #000 !important;
+  color: orange !important;
+}
+body.theme-black-orange #panel {
+  background: #222 !important; /* светлее чёрного */
+  color: orange !important;
+}
+
+body.theme-black-orange h1,
+body.theme-black-orange h2,
+body.theme-black-orange h3,
+body.theme-black-orange p,
+body.theme-black-orange button,
+body.theme-black-orange span,
+body.theme-black-orange a,
+body.theme-black-orange img
+{
+  color: orange;
+}
+
+body.theme-black-orange .cardComment,
+body.theme-black-orange .marquee-inner,
+body.theme-black-orange button{
+  background: #000;
+
+}
+
+body.theme-black-orange footer {
+  background: #222; /* чуть светлее */
+  color: orange;
+}
+
+/* зелёный + жёлтый */
+body.theme-green-yellow {
+  background: green !important;
+  color: yellow !important;
+}
+body.theme-green-yellow #panel {
+  background: #3ca63c !important; /* светлее зелёного */
+  color: yellow !important;
+}
+
+body.theme-green-yellow h1,
+body.theme-green-yellow h2,
+body.theme-green-yellow h3,
+body.theme-green-yellow p,
+body.theme-green-yellow button,
+body.theme-green-yellow span{
+  color: yellow !important;
+}
+
+body.theme-green-yellow .cardComment,
+body.theme-green-yellow .marquee-inner,
+body.theme-green-yellow button{
+  background: #3ca63c !important;
+
+}
+
+body.theme-green-yellow footer {
+  background: #3ca63c; /* светлее чем фон */
+  color: yellow;
+}
+
+/* чёрный + белый */
+body.theme-black-white{
+  background: #000 !important;
+  color: #fff !important;
+}
+
+body.theme-black-white #panel {
+  background: #222 !important;
+  color: #fff !important;
+}
+
+body.theme-black-white h1,
+body.theme-black-white h2,
+body.theme-black-white h3,
+body.theme-black-white p,
+body.theme-black-white span,
+body.theme-black-white button,
+body.theme-black-white .cardComment{
+  color: #fff !important;
+}
+
+body.theme-black-white .cardComment,
+body.theme-black-white .marquee-inner,
+body.theme-black-white button{
+  background: #000 !important;
+
+}
+
+body.theme-black-white footer {
+  background: #222;
+  color: #fff;
+}
+
+/* серый + белый */
+body.theme-gray-white {
+  background: #555 !important;
+  color: #fff !important;
+}
+body.theme-gray-white #panel {
+  background: #777 !important; /* светлее серого */
+  color: #fff !important;
+}
+
+body.theme-gray-white h1,
+body.theme-gray-white h2,
+body.theme-gray-white h3,
+body.theme-gray-white p,
+body.theme-gray-white button,
+body.theme-gray-white span{
+  color: #fff !important;
+}
+
+body.theme-gray-white .cardComment,
+body.theme-gray-white .marquee-inner,
+body.theme-gray-white button{
+    color: #fff !important;
+  background: gray;
+}
+
+body.theme-gray-white footer {
+  background: #777; /* светлее чем #555 */
+  color: #fff;
+}
+
+/* слабовидящие */
+
+    .theme-btn {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 10px;
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      font-size: 16px;
+      border-radius: 8px;
+      background: none;
+      transition: 0.2s;
+    }
+
+    .changeText {
+      margin-top: 20px;
+    }
+
+    /* Кнопка открытия панели */
+
+    /* Иконки */
+    .icon {
+      font-size: 18px;
+      background: none;
+    }
+
+    /* изменение размера текста */
+    .controls{
+      display: flex;
+      align-items: center;
+      background: none;
+      margin-top: 15px;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      font-size: 16px;
+      border-radius: 8px;
+      transition: 0.2s;
+    }
+
+    .controls-btn{
+      margin: 5px;
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+      width: 80px;
+      font-size: 16px;
+      border-radius: 8px;
+      transition: 0.2s;
+    }
+
+    .buttonTheme{
+      background: none !important;
+    }
+

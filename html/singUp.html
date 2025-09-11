@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style/singUp.css">
+    <link rel="stylesheet" href="/fonts/fonts.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="/style/paneltopic.css">
+</head>
+<body>  
+    <header class="header" id="content-header">
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li><a href=" http://127.0.0.1:5501/main.html#" class="logo"><img src="/img/logo2 1.svg" alt="">Kasip Hub</a></li>
+                <div class="links"> <li><a href="http://127.0.0.1:5501/main.html#" class="link">Главная</a></li>
+                <li><a href="http://127.0.0.1:5501/html/singUp.html?#donate" class="link"> Донат</a></li>
+                <li><a href="http://127.0.0.1:5501/html/singUp.html?#about" class="link">О нас</a></li>
+                </div>
+            <button class="btn changeTopic open-panel-btn" onclick="togglePanel()"><img src="/img/material-symbols_eyeglasses-2-sound-rounded.svg" alt="">Настроить версию</button> <!--изменение версии-->
+            </ul>
+        </nav>           
+    </header>
+<!-- <div class="accessibility-panel" id="panel">
+    <h3>Выбор темы</h3>
+    <div class="buttonTheme">
+    <button class="theme-btn" onclick="setTheme('theme-black-orange')"><img src="./img/Ellipse 20.svg" alt=""></button>
+    <button class="theme-btn" onclick="setTheme('theme-green-yellow')"><img src="./img/Ellipse 22.svg" alt=""></button> 
+    <button class="theme-btn" onclick="setTheme('theme-black-white')"><img src="./img/Ellipse 19.svg" alt=""></button>
+    <button class="theme-btn" onclick="setTheme('theme-gray-white')"><img src="./img/Ellipse 21.svg" alt=""></button>
+    </div>
+    <h3>Размер текста</h3>
+
+  </div>  -->
+    <main>
+    <div id="auth-container">
+
+    <form id="login-form" class="auth-form">
+        <div class="form-title">
+        <div class="links-form">
+            <a href="#" class="singupLink" onclick="switchForm('login')">Войти</a>
+            <a href="#" class="singupLink" onclick="switchForm('register')">Регистрация</a>
+        </div>
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Пароль" required>
+        <button type="submit" class="btnForm">Войти</button>
+        <h2>Войти с помощью</h2>
+        <div class="social-buttons">
+            <button class="social-btn"><img src="/img/devicon_google.svg" alt=""></button>
+            <button class="social-btn"><img src="/img/ic_baseline-apple.svg" alt=""></button>
+            <button class="social-btn"><img src="/img/ic_baseline-facebook.svg" alt=""></button>
+        </div>
+        </div>
+    </form>
+
+    <form id="register-form" class="auth-form active">
+        <div class="form-title">
+       <div class="links-form">
+            <a href="#" onclick="switchForm('login')">Войти</a>
+            <a href="#" onclick="switchForm('register')">Регистрация</a>
+        </div>
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Пароль" required>
+        <input type="password" placeholder="Повторите пароль" required>
+        <div class="checkbox-form">
+        <input type="checkbox" placeholder="Я согласен с политикой конфиденциальности" class="checkbox" required> <p>Я соглашаюсь на обработку персональных данных</p>
+        </div>
+        <button type="submit" class="btnForm">Зарегистрироваться</button>
+        <h2>Зарегистрироваться с помощью</h2>
+        <div class="social-buttons">
+            <button class="social-btn"><img src="/img/devicon_google.svg" alt=""></button>
+            <button class="social-btn"><img src="/img/ic_baseline-apple.svg" alt=""></button>
+            <button class="social-btn"><img src="/img/ic_baseline-facebook.svg" alt=""></button>
+        </div>
+        </div>
+    </form>
+    </div>
+    </main>
+     <footer id="content-footer" id="content">
+        <div class="rightsideFooter">
+            <div class="toptitleFooter">
+                <a href="#">О нас</a>
+                <a href="#">Контакты</a>
+            </div>
+            <div class="bottomMessenger">
+                   <button class="messanger-btn"><a href="#"><img src="/img/twitter 1 (1).svg" alt="" class="messanger" type="button" href="#"></a></button> 
+                   <button class="messanger-btn"><a href="#"><img src="/img/facebook 1 (1).svg" alt="" class="messanger" type="button" href="#"></a></button>
+                   <button class="messanger-btn"><a href="#"><img src="/img/instagram 1 (1).svg" alt="" class="messanger" type="button" href="#"></a></button>
+                     <div class="centerFooter">
+            <p>© 2025 Kasip Hub. Все права защищены.</p>
+        </div>
+            </div>
+        </div>
+       
+    </footer>
+    <script src="/script/singUp.js"></script>
+    <script src="/script/paneltopic.js"></script>
+</body>
+
+</html>

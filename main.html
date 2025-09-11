@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style/main.css">
+    <link rel="stylesheet" href="./fonts/fonts.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="/style/paneltopic.css">
+</head>
+<body class="theme-default">
+    <div class="gradient"></div>
+    <div id="content">
+    <div class="aiChat">
+        <h2 class="hidden">ИИ-бот <br>
+        Чем я могу вам помочь? - 
+    </h2>
+    <button class="btn aiChat-btn"><img src="./img/logo2 1.svg" alt=""></button>
+    </div>
+
+    <header class="header" id="content-header">
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li><a href="#" class="logo"><img src="./img/logo2 1.svg" alt="">Kasip Hub</a></li>
+                <div class="links">
+                <li><a href="#" class="link"> <b>Донат</b></a></li>
+                <li><a href="#" class="link"><b>О нас</b></a></li>
+                <button class="btn changeTopic open-panel-btn" onclick="togglePanel()"><img src="./img/material-symbols_eyeglasses-2-sound-rounded.svg" alt="">Настроить версию</button> <!--изменение версии-->
+                </div>
+            </ul>
+        </nav>
+        <div class="btnGroup">
+       <a href="http://127.0.0.1:5501/html/singUp.html?#login" class="btn-singup"><button class="btn whiteBtn">Логин</button></a>
+        <a href="http://127.0.0.1:5501/html/singUp.html?#register"><button class="btn border-singup">Регистрация</button></a>
+        </div>
+    </header>
+    <div class="accessibility-panel" id="panel">
+    <h3>Выбор темы</h3>
+    <div class="buttonTheme">
+        <button class="theme-btn" onclick="setTheme('theme-black-orange')"><img src="./img/Ellipse 20.svg" alt=""></button>
+        <button class="theme-btn" onclick="setTheme('theme-green-yellow')"><img src="./img/Ellipse 22.svg" alt=""></button> 
+        <button class="theme-btn" onclick="setTheme('theme-black-white')"><img src="./img/Ellipse 19.svg" alt=""></button>
+        <button class="theme-btn" onclick="setTheme('theme-gray-white')"><img src="./img/Ellipse 21.svg" alt=""></button>
+    </div>
+    <h3 class="changeText" id="text-size">Размер текста</h3>
+    <div class="controls">
+        <button class="controls-btn" onclick="changeSize('increase')">+</button>
+        <button class="controls-btn" onclick="changeSize('decrease')">-</button>
+        <button class="controls-btn" onclick="changeSize('reset')">Вернуть</button>
+  </div>
+  </div>
+    <section class="bannerSection site-content" id="content1">
+        <div class="bannerTitle">
+        <h1 class="title">Учись. Развивайся. <br> Работай.</h1>
+        <button class="btn bannerBtn">Начать обучение</button>
+        </div>
+        <img src="./img/image 1471.png" alt="">
+    </section>
+    <main class="main" id="main-content">
+
+        <section class="courses-section site-content"> <!--Переписать код полностью : -->
+           <div class="courses">
+            <h1 class="heading-course">Курсы</h1>
+            <div class="scroll-course">
+               <div class="course-cards">
+                    <div class="course-card widthmore">
+                        <h2 class="course-title">Графический дизайн <br>(Figma)</h2>
+                        <div class="course-descriptions">
+                        <p class="course-description">Видео + задания</p>
+                        <p class="course-description">🕑 3 месяца</p>
+                        <p class="course-description">♿ 👁 Подходит: ОДА, нарушения зрения</p>
+                        <p class="course-description endcourse">🏅Сертификат по окончанию</p>
+                        </div>
+                        <button class="courseBtn hight">подробнее</button>
+                    </div>
+                    <div class="course-card widthmore">
+                        <h2 class="course-title">Цифровая<br>грамотность</h2>
+                        <div class="course-descriptions">
+                        <p class="course-description">Видео + инструкции</p>  
+                        <p class="course-description">🕑 2 недели</p>
+                        <p class="course-description">♿ Подходит для: <br> Абсолютно для всех категорий ОВЗ</p>
+                        <p class="course-description endcourse">🏅Сертификат по окончанию</p>
+                        </div>
+                        <button class="courseBtn hight">подробнее</button>
+                    </div>
+                    <div class="course-card">
+                        <h2 class="course-title">Тестирование ПО (QA)</h2>
+                        <div class="course-descriptions">
+                        <p class="course-description">Видеоуроки + симуляции <br> тестов</p>
+                        <p class="course-description">🕑 4 недели</p>
+                        <p class="course-description">♿ Подходит для: <br>– Людей с нарушениями слуха<br>– Людей с ограниченной подвижностью рук</p>
+                        <p class="course-description endcourse">🏅Сертификат по окончанию</p>
+                        </div>
+                        <button class="courseBtn">подробнее</button>
+                    </div>
+                </div>
+            </div>
+           </div>
+           <button class="addcourseBtn btn">перейти</button>
+        </section>
+
+        <section class="supportProject site-content">
+            <h1 class="titlesupport">Поддержите нас</h1>
+            <p class="subtitleSupport">Ваш вклад помогает нам расширять доступ к образованию <br><br>
+                Поддержать проект - без регистраций.</p>
+                <button class="btn supportBtn">Донатить проекту</button>
+        </section>
+
+        <section class="partners site-content"><!--Слайдер с партнерами спавнится постоянно-->
+            <h1 class="titlesupport">Наши партнеры</h1>
+<div class="marquee">
+  <div class="marquee-inner">
+    <span> Nike </span> 
+    <span>Adidas</span>
+    <span>Puma</span> 
+    <span>Reebok</span>
+    <span>Under Armour</span>
+    <span>New Balance</span>
+  </div>
+  <div class="marquee-inner">
+    <span> Nike </span> 
+    <span>Adidas</span>
+    <span>Puma</span> 
+    <span>Reebok</span>
+    <span>Under Armour</span>
+    <span>New Balance</span>
+  </div>
+</div>
+        </section>
+
+        <section class="comment site-content">
+            <div class="titlesComment">
+            <h1 class="titleComment">Отзывы студентов</h1>
+            <p class="paragraphComment">Что наши студенты говорят о нас.</p>
+            </div>
+            <div class="cardComments">
+
+                <div class="cardComment">
+                    <div class="topComment-element">
+                    <h2 class="cardComment-title">Ирина</h2>
+                    <div class="grade">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    </div>
+                    <p class="cardComment-text">Курсы были отличными! <br>
+                         Особенно классные были <br> основатели компаний!!!</p>
+                </div>
+                 <div class="cardComment">
+                    <div class="topComment-element">
+                    <h2 class="cardComment-title">Алексей</h2>
+                    <div class="grade">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>          
+                    </div>
+                    </div>
+                    <p class="cardComment-text">Я нашёл отличную работу <br>
+                         благодаря Kasip Hub.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer id="content-footer site-content" id="footer-content">
+        <div class="rightsideFooter ">
+            <div class="toptitleFooter">
+                <a href="#">О нас</a>
+                <a href="#">Контакты</a>
+            </div>
+            <div class="bottomMessenger">
+                    <img src="./img/twitter 1 (1).svg" alt="" class="messanger" type="button" href="#">
+                    <img src="./img/facebook 1 (1).svg" alt="" class="messanger" type="button" href="#">
+                    <img src="./img/instagram 1 (1).svg" alt="" class="messanger" type="button" href="#">
+                     <div class="centerFooter">
+            <p>© 2025 Kasip Hub. Все права защищены.</p>
+        </div>
+            </div>
+        </div>
+       
+    </footer>
+    </div>
+</body>
+<script src="./script.js"></script>
+<script src="./script/paneltopic.js"></script>
+</html>
