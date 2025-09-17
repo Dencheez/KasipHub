@@ -8,19 +8,28 @@
     <link rel="stylesheet" href="fonts/fonts.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="style/paneltopic.css">
+    <link rel="stylesheet" href="style/media.css">
+    <link rel="stylesheet" href="style/ai-chat.css">
 </head>
 <body class="theme-default">
     <div class="gradient"></div>
     <div id="content">
+
     <div class="aiChat">
-        <h2 class="hidden">ИИ-бот <br>
-        Чем я могу вам помочь? - 
-    </h2>
-    <button class="btn aiChat-btn"><img src="img/logo2 1.svg" alt=""></button>
+    <button class="btn aiChat-btn" id="aiChat" onclick="aiBtn('chat-window')"><img src="img/logo2 1.svg" alt="aiChat"></button>
+
+     <div class="chat-window">
+    <div class="chat-header">Поддержка AI</div>
+    <div class="chat-messages" id="chatMessages"></div>
+    <div class="chat-input">
+      <input type="text" id="userInput" placeholder="Напишите сообщение...">
+      <button id="sendBtn">➤</button>
+    </div>
+  </div>
     </div>
 
     <header class="header" id="content-header">
-        <nav class="navbar">
+        <nav class="nav">
             <ul class="nav-list">
                 <li><a href="#" class="logo"><img src="img/logo2 1.svg" alt="">Kasip Hub</a></li>
                 <div class="links">
@@ -31,8 +40,8 @@
             </ul>
         </nav>
         <div class="btnGroup">
-       <a href="http://127.0.0.1:5501/html/singUp.html?#login" class="btn-singup"><button class="btn whiteBtn">Логин</button></a>
-        <a href="http://127.0.0.1:5501/html/singUp.html?#register"><button class="btn border-singup">Регистрация</button></a>
+       <a href="http://127.0.0.1:5502/html/singUp.html# " class="btn-singup"><button class="btn whiteBtn">Логин</button></a>
+        <a href="http://127.0.0.1:5502/html/singUp.html#"><button class="btn border-singup">Регистрация</button></a>
         </div>
     </header>
     <div class="accessibility-panel" id="panel">
@@ -188,4 +197,6 @@
     </div>
 </body>
 <script src="script/paneltopic.js"></script>
+<script src="script/burger.js"></script>
+<script src="script/chat-AI.js"></script>
 </html>

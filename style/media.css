@@ -1,0 +1,113 @@
+/* ===== Мобильный header ===== */
+.mobile-nav {
+  display: none;
+  width: 100%;
+    padding: 10px 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  z-index: 1001;
+}
+
+/* Кнопка-бургер */
+
+
+.burger-btn i {
+  display: block;
+  color: #EFE7DB  ;
+  height: 3px;
+  width: 100%;
+  background: none;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+/* Анимация крестика */
+.burger-btn.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.burger-btn.active span:nth-child(2) {
+  opacity: 0;
+}
+.burger-btn.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* ===== Мобильное меню ===== */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 80%;
+  height: 100vh;
+  background: #EFE7DB;
+  padding: 30px 20px;
+  transition: right 0.3s ease;
+  z-index: 1000;
+  overflow-y: auto;
+}
+
+.mobile-menu.active {
+  right: 0;
+}
+
+.burger-title {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.burger-title li {
+  margin-bottom: 25px;
+}
+
+.burger-link {
+  color: #0B0C49;
+  font-size: 20px;
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+}
+
+.burger-link:hover {
+  color: #FFD700;
+}
+
+/* Настройки внутри меню */
+.mobile-menu h3 {
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.mobile-menu .buttonTheme {
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.mobile-menu .controls {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.mobile-menu .controls-btn {
+  background: #EFE7DB;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* ===== Адаптив ===== */
+@media (max-width: 1024px) {
+  .desktop-only {
+    display: none !important; /* убираем десктопное меню */
+  }
+  .mobile-nav {
+    display: flex;
+  }
+  .mobile-only {
+    display: block;
+  }
+}
